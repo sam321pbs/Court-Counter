@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="com.superpak.sammengistu.courtcounter.MainActivity">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/tap_on_a_side_to_add_points_then_add_points"
+              android:gravity="center_horizontal"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="horizontal">
+
+        <TextView style="@style/score_text_view"
+                  android:id="@+id/left_side_score_text_view"/>
+
+        <View android:layout_width="@dimen/divider"
+              android:layout_height="match_parent"
+              android:layout_marginTop="@dimen/activity_horizontal_margin"
+              android:layout_marginBottom="@dimen/activity_horizontal_margin"
+              android:background="@color/colorPrimary"/>
+
+        <TextView style="@style/score_text_view"
+                  android:id="@+id/right_side_score_text_view"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/points_controls"/>
+
+</FrameLayout>

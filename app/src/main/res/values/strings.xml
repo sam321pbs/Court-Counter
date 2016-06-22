@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Court Counter</string>
+    <string name="reset">Reset</string>
+    <string name="one">One</string>
+    <string name="two">Two</string>
+    <string name="three">Three</string>
+    <string name="tap_on_a_side_to_add_points_then_add_points">Tap on a side to add points then add
+        points
+    </string>
+    <string name="zero">0</string>
+</resources>
